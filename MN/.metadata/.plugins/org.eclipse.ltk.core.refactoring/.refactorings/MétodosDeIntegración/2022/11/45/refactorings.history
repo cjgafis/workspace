@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;interfaz.PanelTrapecio&apos; to &apos;PanelIntegrales&apos;&#x0A;- Original project: &apos;MétodosDeIntegración&apos;&#x0A;- Original element: &apos;interfaz.PanelTrapecio&apos;&#x0A;- Renamed element: &apos;interfaz.PanelIntegrales&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PanelTrapecio&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;interfaz{PanelTrapecio.java[PanelTrapecio" matchStrategy="1" name="PanelIntegrales" qualified="false" references="true" similarDeclarations="false" stamp="1667425761180" textual="false" version="1.0"/>
+</session>

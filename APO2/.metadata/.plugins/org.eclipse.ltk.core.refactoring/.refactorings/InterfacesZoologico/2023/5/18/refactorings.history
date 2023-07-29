@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;mundo.Carniboro.java&apos; to &apos;Carnivoro.java&apos;&#x0A;- Original project: &apos;InterfacesZoologico&apos;&#x0A;- Original element: &apos;mundo.Carniboro.java&apos;&#x0A;- Renamed element: &apos;mundo.Carnivoro.java&apos;" description="Rename compilation unit &apos;Carniboro.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;mundo{Carniboro.java" name="Carnivoro.java" references="false" stamp="1683405925931" version="1.0"/>
+</session>

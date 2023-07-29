@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mundo.EjemploDSe&apos; to &apos;EjemploDeUso&apos;&#x0A;- Original project: &apos;ClaseFileWriter&apos;&#x0A;- Original element: &apos;mundo.EjemploDSe&apos;&#x0A;- Renamed element: &apos;mundo.EjemploDeUso&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EjemploDSe&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;mundo{EjemploDSe.java[EjemploDSe" matchStrategy="1" name="EjemploDeUso" qualified="false" references="true" similarDeclarations="false" stamp="1679179595296" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,15 @@
+command=/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/bin/javadoc
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="mundo.Estudiante"><rhs name\="mundo.Estudiante"/></lhs><lhs name\="mundo.Calculadora"><rhs name\="mundo.Calculadora"/></lhs><lhs name\="mundo.Empleado"><rhs name\="mundo.Empleado"/></lhs><lhs name\="mundo.Busqueda"><rhs name\="mundo.Busqueda"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.ReflectiveOperationException"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.lang.ClassNotFoundException"/><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.lang.ClassNotFoundException"/><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.lang.ClassNotFoundException"><rhs name\="java.lang.ClassNotFoundException"/></lhs><lhs name\="java.sql.SQLException"><rhs name\="java.sql.SQLException"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.exception.name=e
+org.eclipse.jdt.ui.formatterprofiles.version=23
+org.eclipse.jdt.ui.gettersetter.use.is=true
+org.eclipse.jdt.ui.overrideannotation=true
+sourceHoverBackgroundColor=236,235,236
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

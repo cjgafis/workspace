@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;interfaz.BorderLayout.java&apos; to &apos;BorderLayoutExample.java&apos;&#x0A;- Original project: &apos;AdminBorderLayouts&apos;&#x0A;- Original element: &apos;interfaz.BorderLayout.java&apos;&#x0A;- Renamed element: &apos;interfaz.BorderLayoutExample.java&apos;" description="Rename compilation unit &apos;BorderLayout.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;interfaz{BorderLayout.java" name="BorderLayoutExample.java" references="false" stamp="1682992216368" version="1.0"/>
+</session>

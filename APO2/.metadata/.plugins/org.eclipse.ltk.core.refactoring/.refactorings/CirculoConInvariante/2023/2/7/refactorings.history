@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mundo.Ciculo&apos; to &apos;Circulo&apos;&#x0A;- Original project: &apos;CirculoConInvariante&apos;&#x0A;- Original element: &apos;mundo.Ciculo&apos;&#x0A;- Renamed element: &apos;mundo.Circulo&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ciculo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;mundo{Ciculo.java[Ciculo" matchStrategy="1" name="Circulo" qualified="false" references="true" similarDeclarations="false" stamp="1676497627751" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mundo.Burbuja&apos; to &apos;Ordenamiento&apos;&#x0A;- Original project: &apos;Odenamientos&apos;&#x0A;- Original element: &apos;mundo.Burbuja&apos;&#x0A;- Renamed element: &apos;mundo.Ordenamiento&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Burbuja&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;mundo{Burbuja.java[Burbuja" matchStrategy="1" name="Ordenamiento" qualified="false" references="true" similarDeclarations="false" stamp="1677105907221" textual="false" version="1.0"/>
+</session>

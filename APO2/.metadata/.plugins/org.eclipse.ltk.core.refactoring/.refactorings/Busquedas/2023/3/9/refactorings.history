@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mundo.BVusqueda&apos; to &apos;Busqueda&apos;&#x0A;- Original project: &apos;Busquedas&apos;&#x0A;- Original element: &apos;mundo.BVusqueda&apos;&#x0A;- Renamed element: &apos;mundo.Busqueda&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BVusqueda&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;mundo{BVusqueda.java[BVusqueda" matchStrategy="1" name="Busqueda" qualified="false" references="true" similarDeclarations="false" stamp="1677707921735" textual="false" version="1.0"/>
+</session>

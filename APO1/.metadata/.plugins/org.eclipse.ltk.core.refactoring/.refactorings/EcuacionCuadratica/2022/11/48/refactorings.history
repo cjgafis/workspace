@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;interfaz.interfazEcuacionCuadratica&apos; to &apos;InterfazEcuacionCuadratica&apos;&#x0A;- Original project: &apos;EcuacionCuadratica&apos;&#x0A;- Original element: &apos;interfaz.interfazEcuacionCuadratica&apos;&#x0A;- Renamed element: &apos;interfaz.InterfazEcuacionCuadratica&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;interfazEcuacionCuadratica&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;interfaz{interfazEcuacionCuadratica.java[interfazEcuacionCuadratica" matchStrategy="1" name="InterfazEcuacionCuadratica" qualified="false" references="true" similarDeclarations="false" stamp="1668993226553" textual="false" version="1.0"/>
+</session>

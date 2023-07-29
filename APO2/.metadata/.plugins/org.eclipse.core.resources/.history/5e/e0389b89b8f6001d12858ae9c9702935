@@ -1,0 +1,38 @@
+package mundo;
+
+import java.util.Scanner;
+
+public class Aplicacion 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        Universidad universidad = new Universidad();
+        int opcion;
+
+        do 
+        {
+            System.out.println("==== Menú ====");
+            System.out.println("1. Asignar curso a todas las personas");
+            System.out.println("2. Salir");
+            System.out.print("Seleccione una opción: ");
+            opcion = scanner.nextInt();
+
+            switch (opcion) 
+            {
+                case 1:
+                    universidad.asignarCurso();
+                    break;
+                case 2:
+                    System.out.println("Saliendo...");
+                    break;
+                default:
+                    System.out.println("Opción inválida, intente de nuevo");
+                    break;
+            }
+        } 
+        while (opcion != 2);
+
+        scanner.close();
+    }
+}

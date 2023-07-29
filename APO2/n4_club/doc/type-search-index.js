@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"uniandes.cupi2.club.mundo","l":"Club"},{"p":"uniandes.cupi2.club.mundo","l":"Factura"},{"p":"uniandes.cupi2.club.mundo","l":"Socio"}];updateSearchResults();

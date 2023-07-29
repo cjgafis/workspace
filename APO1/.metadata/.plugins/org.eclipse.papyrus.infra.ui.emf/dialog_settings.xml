@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_org.eclipse.papyrus.infra.hyperlink.editorTreeView">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_org.eclipse.papyrus.infra.hyperlink.specificHyperLinks">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Prueba1Papyrus/Prueba1Papyrus.notation#_cgb7UKfbEe28AIeNFztTbw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Prueba1Papyrus/Prueba1Papyrus.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/Prueba1Papyrus/Prueba1Papyrus.uml:uml:Type:type">
+	</section>
+</section>

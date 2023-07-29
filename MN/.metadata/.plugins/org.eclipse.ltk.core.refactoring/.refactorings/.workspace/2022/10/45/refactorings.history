@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 16 resources" deleteContents="false" description="Delete 16 resources" element1="/CalculadoraDeRaices" element10="/proyectoMetodos" element11="/Proyecto Metodos Luis Ramirez" element12="/ProyectoSegundaEntrega" element13="/TeoriaDelError" element14="/TeoríaDelErrorMetodosNumericos" element15="/TeoriaError" element16="/TeoriaErrorAF" element2="/CalculadoraError" element3="/CalculoDeRaices" element4="/EvaluarFuncion" element5="/JHON FREDY RODRIGUEZ" element6="/MétodosNuméricosCalculadora" element7="/MétodosNuméricosSegundoProyecto_AlejandraMoreanoVásquez" element8="/Miguel2320201054" element9="/Proyec" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="16" stamp="1667150930412"/>
+</session>

@@ -1,0 +1,367 @@
+/**
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * $Id: Traductor.java,v 1.13 2006/08/11 21:34:30 da-romer Exp $
+ * Universidad de los Andes (Bogotá - Colombia)
+ * Departamento de Ingeniería de Sistemas y Computación 
+ * Licenciado bajo el esquema Academic Free License version 2.1 
+ *
+ * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+ * Ejercicio: n7_traductor
+ * Autor: Daniel Francisco Romero - 27-jun-2006
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+package uniandes.cupi2.traductor.mundo;
+
+import java.util.ArrayList;
+
+/**
+ * Traductor de palabras de español, inglés, francés e italiano. <br>
+ * <b>inv: </b> <br>
+ * espanolIngles != null <br>
+ * espanolFrances != null <br>
+ * espanolItaliano != null <br>
+ * 
+ * En el vector espanolIngles no hay palabras repetidas <br>
+ * En el vector espanolFrances no hay palabras repetidas <br>
+ * En el vector espanolItaliano no hay palabras repetidas <br>
+ * 
+ * En el vector espanolIngles no hay traducciones repetidas <br>
+ * En el vector espanolFrances no hay traducciones repetidas <br>
+ * En el vector espanolItaliano no hay traducciones repetidas
+ */
+public class Traductor
+{
+    // -----------------------------------------------------------------
+    // Constantes
+    // -----------------------------------------------------------------
+
+    /**
+     * Idioma inglés
+     */
+    public final static int INGLES = 0;
+
+    /**
+     * Idioma francés
+     */
+    public final static int FRANCES = 1;
+
+    /**
+     * Idioma italiano
+     */
+    public final static int ITALIANO = 2;
+
+    /**
+     * Idioma español
+     */
+    public final static int ESPANOL = 3;
+
+    // -----------------------------------------------------------------
+    // Atributos
+    // -----------------------------------------------------------------
+
+    /**
+     * Conjunto de traducciones del español al inglés
+     */
+    private ArrayList espanolIngles;
+
+    /**
+     * Conjunto de traducciones del español al francés
+     */
+    private ArrayList espanolFrances;
+
+    /**
+     * Conjunto de traducciones del español al italiano
+     */
+    private ArrayList espanolItaliano;
+
+    // -----------------------------------------------------------------
+    // Constructores
+    // -----------------------------------------------------------------
+
+    /**
+     * Crea al traductor con los diccionarios vacíos. <br>
+     * <b> post: </b> Se creó el traductor con los diccionarios vacíos.
+     */
+    public Traductor( )
+    {
+        espanolIngles = new ArrayList( );
+        espanolFrances = new ArrayList( );
+        espanolItaliano = new ArrayList( );
+
+        // Verifica el invariante
+        verificarInvariante( );
+    }
+
+    // -----------------------------------------------------------------
+    // Métodos
+    // -----------------------------------------------------------------
+
+    /**
+     * Agrega al diccionario una traducción de una palabra en español a un idioma dado. <br>
+     * <b> post: </b> La traducción fue adicionada al diccionario del idioma especificado.
+     * @param pal es la palabra - pal != null y pal != ""
+     * @param trad es la traducción - trad != null y trad != ""
+     * @param idDestino es el idioma destino - idDestino pertenece a {FRANCES, INGLES, ITALIANO}
+     * @return True si la palabra pudo ser adicionada al diccionario o false en caso contrario.
+     */
+    public boolean agregarTraduccion( String pal, String trad, int idDestino )
+    {
+        boolean agregada = false;
+        // Busca la palabra en el diccionario del idioma
+        Traduccion laTraduccion = traducirDeEspanol( pal, idDestino );
+        // Verifica que la palabra ni la traducción existan
+        if( laTraduccion == null && !existeTraduccion( idDestino, trad ) )
+        {
+            // Obtiene el arreglo de las traducciones correspondientes al idioma
+            ArrayList traducciones = obtenerDiccionario( idDestino );
+            // Agrega la palabra con su traducción al diccionario
+            traducciones.add( new Traduccion( pal, trad ) );
+            agregada = true;
+            // Verifica el invariante
+            verificarInvariante( );
+        }
+        // Indica si la palabra fue agregada
+        return agregada;
+    }
+
+    /**
+     * Dada la palabra de búsqueda y el idioma al que se quiere traducir, retorna la traducción correspondiente. <br>
+     * @param palabra es la palabra a buscar - palabra != null y palabra se encuentra en español
+     * @param idiomaTraduccion es el idioma al que se va a traducir la palabra - idiomaTraduccion pertenece {FRANCES, INGLES, ITALIANO}
+     * @return Traducción de la palabra en el idioma solicitado. Si no encuentra la palabra retorna null
+     */
+    private Traduccion traducirDeEspanol( String palabra, int idiomaTraduccion )
+    {
+        // Obtiene el arreglo de traducciones correspondiente al idioma de traducción
+        ArrayList traducciones = obtenerDiccionario( idiomaTraduccion );
+        Traduccion traduccion = null;
+        // Busca la palabra como palabra base en las traducciones
+        for( int i = 0; i < traducciones.size( ) && traduccion == null; i++ )
+        {
+            Traduccion aux = ( Traduccion )traducciones.get( i );
+            if( aux.darPalabra( ).equalsIgnoreCase( palabra ) )
+                traduccion = aux;
+        }
+        return traduccion;
+    }
+
+    /**
+     * Según el idioma retorna el diccionario correspondiente. <br>
+     * @param idiomaTraduccion es el idioma de la traducción - idiomaTraduccion pertenece {FRANCES, INGLES, ITALIANO}
+     * @return Arreglo con las traducciones del español al idioma dado. Si no se maneja esa traducción retorna null
+     */
+    private ArrayList obtenerDiccionario( int idiomaTraduccion )
+    {
+        switch( idiomaTraduccion )
+        {
+            case INGLES:
+                return espanolIngles;
+            case ITALIANO:
+                return espanolItaliano;
+            case FRANCES:
+                return espanolFrances;
+            default:
+                return null;
+        }
+    }
+
+    /**
+     * Indica si la traducción especificada ya existe en el diccionario del idioma dado. <br>
+     * <b> post: </b> Se retornó true si la traducción ya se encuentra asignada o false de lo contrario.
+     * @param idiomaTraduccion es el idioma del diccionario - idiomaTraduccion pertenece {FRANCES, INGLES, ITALIANO}
+     * @param traduccion es la traducción a ser buscada en el diccionario - traducion!=null
+     * @return True si la traducción ya se encuentra asignada o false de lo contrario.
+     */
+    private boolean existeTraduccion( int idiomaTraduccion, String traduccion )
+    {
+        boolean existe = false;
+        ArrayList traducciones = obtenerDiccionario( idiomaTraduccion );
+        // Recorre el diccionario buscando si hay palabras con la misma traducción
+        for( int i = 0; i < traducciones.size( ) && !existe; i++ )
+        {
+            Traduccion t = ( Traduccion )traducciones.get( i );
+            String palabraTraducida = t.darTraduccion( );
+            if( palabraTraducida.equalsIgnoreCase( traduccion ) )
+                existe = true;
+        }
+        return existe;
+    }
+
+    /**
+     * Dada una palabra, el idioma en el que está y el idioma al que se quiere traducir, este método retorna la traducción correspondiente. Para que la traducción exista entre
+     * dos idiomas diferentes es necesario que la traducción de la palabra exista en los dos idiomas implicados. Así por ejemplos para traducir una palabra de francés a inglés
+     * es necesario que exista la traducción en el diccionario de español-francés y que la traducción de la palabra en español exista el diccionario español-inglés. <br>
+     * @param pal es la palabra - pal != null
+     * @param idOrigen es el idioma de origen - idOrigen pertenece a {FRANCES, INGLES, ITALIANO, ESPANOL}
+     * @param idDestino es el idioma destino - idDestino pertenece a {FRANCES, INGLES, ITALIANO, ESPANOL}
+     * @return Traducción de la palabra en el idioma destino. Si no existe, retorna null.
+     */
+    public Traduccion traducir( String pal, int idOrigen, int idDestino )
+    {
+        // Solo se realiza la traducción si los dos idiomas son diferentes
+        if( idOrigen != idDestino )
+        {
+            if( idOrigen == ESPANOL )
+            {
+                return traducirDeEspanol( pal, idDestino );
+            }
+            else if( idDestino == ESPANOL )
+            {
+                return traducirAEspanol( pal, idOrigen );
+            }
+            else
+            {
+                Traduccion aux = traducirAEspanol( pal, idOrigen );
+                if( aux != null )
+                    return traducirDeEspanol( aux.darPalabra( ), idDestino );
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Dada la palabra de búsqueda y el idioma en el que se encuentra, retorna la traducción correspondiente al español. <br>
+     * @param palabra es la palabra a buscar - palabra != null
+     * @param idiomaOrigen es el idioma en el que se encuentra la palabra - idiomaOrigen pertenece {FRANCES, INGLES, ITALIANO}
+     * @return Traducción de la palabra en español - Si no encuentra la traducción retorna null
+     */
+    private Traduccion traducirAEspanol( String palabra, int idiomaOrigen )
+    {
+        // Obtiene el arreglo de traducciones correspondiente al idioma origen
+        ArrayList traducciones = obtenerDiccionario( idiomaOrigen );
+        Traduccion traduccion = null;
+        // Busca la palabra como la traducción en el diccionario
+        for( int i = 0; i < traducciones.size( ) && traduccion == null; i++ )
+        {
+            Traduccion aux = ( Traduccion )traducciones.get( i );
+            if( aux.darTraduccion( ).equalsIgnoreCase( palabra ) )
+                traduccion = aux;
+        }
+        return traduccion;
+    }
+
+    /**
+     * Retorna el número de palabras del diccionario de un idioma dado. <br>
+     * @param idDestino es el idioma destino - idDestino pertenece a {FRANCES, INGLES, FRANCES}
+     * @return Número de palabras en el diccionario
+     */
+    public int darTotalPalabrasTraducidas( int idDestino )
+    {
+        // Obtiene el arreglo de traducciones correspondiente
+        ArrayList traducciones = obtenerDiccionario( idDestino );
+        if( traducciones == null )
+            return 0;
+        else
+            return traducciones.size( );
+    }
+
+    // -----------------------------------------------------------------
+    // Invariante
+    // -----------------------------------------------------------------
+
+    /**
+     * Indica si hay palabras repetidas en el diccionario del idioma dado. <br>
+     * @param idTrad es el idioma del diccionario - idTrad pertenece a {FRANCES, INGLES, ITALIANO}
+     * @return True si hay al menos una palabra repetida o false en caso contrario.
+     */
+    private boolean hayPalabrasRepetidas( int idTrad )
+    {
+        Traduccion traduccion;
+        Traduccion otraTraduccion;
+        String palabra;
+        ArrayList traducciones = obtenerDiccionario( idTrad );
+
+        // Recorre las traducciones buscando si hay palabras repetidas
+        for( int i = 0; i < traducciones.size( ) - 1; i++ )
+        {
+            traduccion = ( Traduccion )traducciones.get( i );
+            palabra = traduccion.darPalabra( );
+            for( int j = i + 1; j < traducciones.size( ); j++ )
+            {
+                otraTraduccion = ( Traduccion )traducciones.get( j );
+                if( palabra.equalsIgnoreCase( otraTraduccion.darPalabra( ) ) )
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Indica si hay palabras con la misma traducción en el diccionario del idioma dado. <br>
+     * @param idTrad es el idioma del diccionario - idTrad pertenece a {FRANCES, INGLES, ITALIANO}
+     * @return True si hay dos palabras con la misma traducción o false en caso contrario.
+     */
+    private boolean hayTraduccionesRepetidas( int idTrad )
+    {
+        Traduccion traduccion;
+        Traduccion otraTraduccion;
+        String palabraTraducida;
+        ArrayList traducciones = obtenerDiccionario( idTrad );
+
+        // Recorre las traducciones buscando si hay palabras con la misma traducción
+        for( int i = 0; i < traducciones.size( ) - 1; i++ )
+        {
+            traduccion = ( Traduccion )traducciones.get( i );
+            palabraTraducida = traduccion.darTraduccion( );
+            for( int j = i + 1; j < traducciones.size( ); j++ )
+            {
+                otraTraduccion = ( Traduccion )traducciones.get( j );
+                if( palabraTraducida.equalsIgnoreCase( otraTraduccion.darTraduccion( ) ) )
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    // -----------------------------------------------------------------
+    // Invariante
+    // -----------------------------------------------------------------
+
+    /**
+     * Verifica que el invariante de la clase se cumpla. Si algo falla, lanza un AssertError.<br>
+     * <b>inv: </b> <br>
+     * espanolIngles != null <br>
+     * espanolFrances != null <br>
+     * espanolItaliano != null <br>
+     * En el diccionario español-inglés no hay palabras repetidas <br>
+     * En el diccionario español-francés no hay palabras repetidas <br>
+     * En el diccionario español-italiano no hay palabras repetidas
+     */
+    private void verificarInvariante( )
+    {
+        assert espanolIngles != null : "Diccionario español-ingles sin inicializar";
+        assert espanolFrances != null : "Diccionario español-francés sin inicializar";
+        assert espanolItaliano != null : "Diccionario español-italiano sin inicializar";
+
+        assert !hayPalabrasRepetidas( INGLES ) : "Palabras repetidas en el diccionario de inglés";
+        assert !hayPalabrasRepetidas( FRANCES ) : "Palabras repetidas en el diccionario de francés";
+        assert !hayPalabrasRepetidas( ITALIANO ) : "Palabras repetidas en el diccionario de italiano";
+
+        assert !hayTraduccionesRepetidas( INGLES ) : "Traducciones repetidas en el diccionario de inglés";
+        assert !hayTraduccionesRepetidas( FRANCES ) : "Traducciones repetidas en el diccionario de francés";
+        assert !hayTraduccionesRepetidas( ITALIANO ) : "Traducciones repetidas en el diccionario de italiano";
+    }
+
+    // -----------------------------------------------------------------
+    // Puntos de Extensión
+    // -----------------------------------------------------------------
+
+    /**
+     * Ejecuta el punto de extensión 1
+     * @return respuesta 1
+     */
+    public String metodo1( )
+    {
+        return "respuesta1";
+    }
+
+    /**
+     * Ejecuta el punto de extensión 2
+     * @return respuesta 2
+     */
+    public String metodo2( )
+    {
+        return "respuesta2";
+    }
+}

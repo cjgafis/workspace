@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;interfaz.PnaelResultados.java&apos; to &apos;PanelResultados.java&apos;&#x0A;- Original project: &apos;TheCalculator&apos;&#x0A;- Original element: &apos;interfaz.PnaelResultados.java&apos;&#x0A;- Renamed element: &apos;interfaz.PanelResultados.java&apos;" description="Rename compilation unit &apos;PnaelResultados.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;interfaz{PnaelResultados.java" name="PanelResultados.java" references="false" stamp="1683143449545" version="1.0"/>
+</session>

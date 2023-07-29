@@ -1,0 +1,22 @@
+package mundo;
+
+import java.util.Random;
+
+public class Universidad 
+{
+    private Persona[] personas = new Persona[10];
+    private Curso[] cursos = new Curso[5];
+
+
+    public void asignarCurso() 
+    {
+        Random random = new Random();
+
+        for (Persona persona : personas) 
+        {
+            Curso cursoAleatorio = cursos[random.nextInt(cursos.length)];
+            System.out.println(persona.getNombre() + " asignado al curso " + cursoAleatorio.getNombre());
+            cursoAleatorio.calificar();
+        }
+    }
+}

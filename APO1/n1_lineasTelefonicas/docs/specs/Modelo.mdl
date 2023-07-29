@@ -1,0 +1,5466 @@
+
+(object Petal
+    version    	48
+    _written   	"Rose 8.1.0307.0900"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"Java"
+	    name       	"IDE"
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
+    quid       	"3AF141060332"
+    enforceClosureAutoLoad 	FALSE
+    defaults   	(object defaults
+	rightMargin 	0.000000
+	leftMargin 	0.000000
+	topMargin  	0.000000
+	bottomMargin 	0.000000
+	pageOverlap 	0.000000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"3AF141060334"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"43DA826A037B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"3AF141060333"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"3AF14106033D"
+	logical_models 	(list unit_reference_list
+	    (object Association "$UNNAMED$0"
+		quid       	"43DA84340290"
+		roles      	(list role_list
+		    (object Role "linea2"
+			quid       	"43DA843501B5"
+			label      	"linea2"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica"
+			quidu      	"5A118AF06CD7"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$1"
+			quid       	"43DA843501C5"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa"
+			quidu      	"3BC21332BFCA")))
+	    (object Association "$UNNAMED$2"
+		quid       	"43DA843B0167"
+		roles      	(list role_list
+		    (object Role "linea3"
+			quid       	"43DA843C0000"
+			label      	"linea3"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica"
+			quidu      	"5A118AF06CD7"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$3"
+			quid       	"43DA843C0002"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa"
+			quidu      	"3BC21332BFCA")))
+	    (object Association "$UNNAMED$4"
+		quid       	"43DA843D02CE"
+		roles      	(list role_list
+		    (object Role "linea1"
+			quid       	"43DA843E0138"
+			label      	"linea1"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica"
+			quidu      	"5A118AF06CD7"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"43DA843E013A"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa"
+			quidu      	"3BC21332BFCA")))
+	    (object Association "$UNNAMED$6"
+		quid       	"43DA853902FD"
+		roles      	(list role_list
+		    (object Role "empresa"
+			quid       	"43DA853A0271"
+			label      	"empresa"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa"
+			quidu      	"3BC21332BFCA"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$7"
+			quid       	"43DA853A0273"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::test::EmpresaTest"
+			quidu      	"4F429CEF2663")))
+	    (object Association "$UNNAMED$8"
+		quid       	"43DA85B400EA"
+		roles      	(list role_list
+		    (object Role "linea"
+			quid       	"43DA85B5007D"
+			label      	"linea"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica"
+			quidu      	"5A118AF06CD7"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$9"
+			quid       	"43DA85B5007F"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::test::LineaTelefonicaTest"
+			quidu      	"4B22EED26F78")))
+	    (object Association "$UNNAMED$10"
+		quid       	"43DA87260242"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$11"
+			quid       	"43DA87270196"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$12"
+			quid       	"43DA872701A5"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelExtension"
+			quidu      	"6E01996C9C7E")))
+	    (object Association "$UNNAMED$13"
+		quid       	"43DA872D02DE"
+		roles      	(list role_list
+		    (object Role "panelExtension"
+			quid       	"43DA872E01A5"
+			label      	"panelExtension"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelExtension"
+			quidu      	"6E01996C9C7E"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")
+		    (object Role "principal"
+			quid       	"43DA872E01A7"
+			label      	"principal"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")))
+	    (object Association "$UNNAMED$14"
+		quid       	"43DA8766036B"
+		roles      	(list role_list
+		    (object Role "panelImagen"
+			quid       	"43DA876701E4"
+			label      	"panelImagen"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelImagen"
+			quidu      	"48D401B33152"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$15"
+			quid       	"43DA876701E6"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C")))
+	    (object Association "$UNNAMED$16"
+		quid       	"43DA87AE008C"
+		roles      	(list role_list
+		    (object Role "panelTotales"
+			quid       	"43DA87AE02DE"
+			label      	"panelTotales"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelTotales"
+			quidu      	"76437152D1D7"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"43DA87AE02E0"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C")))
+	    (object Association "$UNNAMED$18"
+		quid       	"43DA881003C8"
+		roles      	(list role_list
+		    (object Role "panelLinea1"
+			quid       	"43DA88110290"
+			label      	"panelLinea1"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelLineaTelefonica"
+			quidu      	"7ABAF63DD713"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")
+		    (object Role "principal"
+			quid       	"43DA88110292"
+			label      	"principal"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")))
+	    (object Association "$UNNAMED$19"
+		quid       	"43DA8813007D"
+		roles      	(list role_list
+		    (object Role "panelLinea2"
+			quid       	"43DA881302BF"
+			label      	"panelLinea2"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelLineaTelefonica"
+			quidu      	"7ABAF63DD713"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")
+		    (object Role "principal"
+			quid       	"43DA881302C1"
+			label      	"principal"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")))
+	    (object Association "$UNNAMED$20"
+		quid       	"43DA8815004E"
+		roles      	(list role_list
+		    (object Role "panelLinea3"
+			quid       	"43DA88150203"
+			label      	"panelLinea3"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelLineaTelefonica"
+			quidu      	"7ABAF63DD713"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")
+		    (object Role "principal"
+			quid       	"43DA88150205"
+			label      	"principal"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")))
+	    (object Association "$UNNAMED$21"
+		quid       	"43DA88B3009C"
+		roles      	(list role_list
+		    (object Role "empresa"
+			quid       	"43DA88B302EE"
+			label      	"empresa"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa"
+			quidu      	"3BC21332BFCA"
+			client_cardinality 	(value cardinality "1")
+			exportControl 	"Implementation")
+		    (object Role "$UNNAMED$22"
+			quid       	"43DA88B302FD"
+			supplier   	"Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas"
+			quidu      	"5FD01CF8FA3C")))
+	    (object Class_Category "uniandes"
+		quid       	"BAF37A4C2EDB"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "cupi2"
+			quid       	"7B0F78603DE6"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class_Category "lineasTelefonicas"
+				quid       	"FAC3881DC059"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class_Category "interfaz"
+					quid       	"5F3BF08D1608"
+					exportControl 	"Public"
+					logical_models 	(list unit_reference_list
+					    (object Class "InterfazLineasTelefonicas"
+						quid       	"5FD01CF8FA3C"
+						stereotype 	"JFrame"
+						operations 	(list Operations
+						    (object Operation "InterfazLineasTelefonicas"
+							quid       	"2DBE7B28A618"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamada"
+							quid       	"16B30FFBB398"
+							parameters 	(list Parameters
+							    (object Parameter "int numeroLinea"
+								quid       	"43DA826B0040"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void reiniciar"
+							quid       	"3D97AEE45777"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void actualizar"
+							quid       	"4976482CF0EA"
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "void main"
+							quid       	"70FB6AB18301"
+							parameters 	(list Parameters
+							    (object Parameter "String[] args"
+								quid       	"43DA826B0044"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "PanelExtension"
+						quid       	"6E01996C9C7E"
+						stereotype 	"JPanel - Listener"
+						operations 	(list Operations
+						    (object Operation "PanelExtension"
+							quid       	"22A2364FEC59"
+							parameters 	(list Parameters
+							    (object Parameter "InterfazLineasTelefonicas elPadre"
+								quid       	"43DA826B0048"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void actionPerformed"
+							quid       	"7EAD8933DE08"
+							parameters 	(list Parameters
+							    (object Parameter "ActionEvent e"
+								quid       	"43DA826B004A"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "PanelImagen"
+						quid       	"48D401B33152"
+						stereotype 	"JPanel"
+						operations 	(list Operations
+						    (object Operation "PanelImagen"
+							quid       	"4CB2E8E76D2E"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "PanelLineaTelefonica"
+						quid       	"7ABAF63DD713"
+						stereotype 	"JPanel - Listener"
+						operations 	(list Operations
+						    (object Operation "PanelLineaTelefonica"
+							quid       	"7CDA685FBA3E"
+							parameters 	(list Parameters
+							    (object Parameter "InterfazLineasTelefonicas laPrincipal"
+								quid       	"43DA826B0051")
+							    (object Parameter "int elNumeroLinea"
+								quid       	"43DA826B0052"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void actualizar"
+							quid       	"791BA106AFF8"
+							parameters 	(list Parameters
+							    (object Parameter "LineaTelefonica linea"
+								quid       	"43DA826B0054"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "String formatearValor"
+							quid       	"41E1B5B71FF6"
+							parameters 	(list Parameters
+							    (object Parameter "double valor"
+								quid       	"43DA826B0056"))
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "String formatearValorEntero"
+							quid       	"606DBD398E3C"
+							parameters 	(list Parameters
+							    (object Parameter "int valor"
+								quid       	"43DA826B0058"))
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "void actionPerformed"
+							quid       	"5E51D66CA676"
+							parameters 	(list Parameters
+							    (object Parameter "ActionEvent e"
+								quid       	"43DA826B005A"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "PanelTotales"
+						quid       	"76437152D1D7"
+						stereotype 	"JPanel"
+						operations 	(list Operations
+						    (object Operation "PanelTotales"
+							quid       	"11947EAFBBBC"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void actualizar"
+							quid       	"288F78CE92C0"
+							parameters 	(list Parameters
+							    (object Parameter "Empresa empresa"
+								quid       	"43DA826B005F"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "String formatearValor"
+							quid       	"3B85AAA9695D"
+							parameters 	(list Parameters
+							    (object Parameter "double valor"
+								quid       	"43DA826B0061"))
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "String formatearValorEntero"
+							quid       	"169E42DC05B3"
+							parameters 	(list Parameters
+							    (object Parameter "int valor"
+								quid       	"43DA826B0063"))
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0))))
+					logical_presentations 	(list unit_reference_list))
+				    (object Class_Category "mundo"
+					quid       	"63B89CBE5C9D"
+					exportControl 	"Public"
+					logical_models 	(list unit_reference_list
+					    (object Class "Empresa"
+						quid       	"3BC21332BFCA"
+						operations 	(list Operations
+						    (object Operation "void inicializar"
+							quid       	"7542BE8658CB"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "LineaTelefonica darLinea1"
+							quid       	"6F94542F5E88"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "LineaTelefonica darLinea2"
+							quid       	"52D1E8931CF7"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "LineaTelefonica darLinea3"
+							quid       	"84B2F84ED9B5"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLocalLinea1"
+							quid       	"138CD7C350A0"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B006F"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLocalLinea2"
+							quid       	"1D1A4A51DC25"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0071"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLocalLinea3"
+							quid       	"11195FA628ED"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0073"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLargaDistanciaLinea1"
+							quid       	"8225105C9762"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0075"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLargaDistanciaLinea2"
+							quid       	"561D9146B988"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0077"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLargaDistanciaLinea3"
+							quid       	"626A9D673F7E"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0079"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaCelularLinea1"
+							quid       	"2A0B5C16A541"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B007B"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaCelularLinea2"
+							quid       	"533BDEED3F9D"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B007D"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaCelularLinea3"
+							quid       	"44414C9A6244"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B007F"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "int darTotalNumeroLlamadas"
+							quid       	"32DAC36EEC56"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "int darTotalMinutos"
+							quid       	"381244EF8685"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "double darTotalCostoLlamadas"
+							quid       	"7600E0BEA553"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "double darCostoPromedioMinuto"
+							quid       	"CA9F512248E3"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void reiniciar"
+							quid       	"513E15658B79"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "LineaTelefonica"
+						quid       	"5A118AF06CD7"
+						operations 	(list Operations
+						    (object Operation "void inicializar"
+							quid       	"1EE0B78A9EE4"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void reiniciar"
+							quid       	"14B69DAC8B2B"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "double darCostoLlamadas"
+							quid       	"22417641F1C9"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "int darNumeroLlamadas"
+							quid       	"54FA548000B8"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "int darNumeroMinutos"
+							quid       	"7F5D9C1B3B26"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLocal"
+							quid       	"625FF7845336"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B008F"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaLargaDistancia"
+							quid       	"4A77C27F8E99"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0091"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void agregarLlamadaCelular"
+							quid       	"3EFD04EFD46B"
+							parameters 	(list Parameters
+							    (object Parameter "int minutos"
+								quid       	"43DA826B0093"))
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0))
+						class_attributes 	(list class_attribute_list
+						    (object ClassAttribute "int numeroLlamadas"
+							quid       	"7B46DA04C99B")
+						    (object ClassAttribute "int numeroMinutos"
+							quid       	"269D2C7AE4D6")
+						    (object ClassAttribute "double costoLlamadas"
+							quid       	"57AD85FB0933"))))
+					logical_presentations 	(list unit_reference_list))
+				    (object Class_Category "test"
+					quid       	"14008AB1E1E6"
+					exportControl 	"Public"
+					logical_models 	(list unit_reference_list
+					    (object Class "EmpresaTest"
+						quid       	"4F429CEF2663"
+						stereotype 	"TestCase"
+						operations 	(list Operations
+						    (object Operation "void setupEscenario1"
+							quid       	"1C84B06AB1A4"
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "void setupEscenario2"
+							quid       	"3901DE54DDC8"
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "void testInicializacion"
+							quid       	"2FD296857863"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLocalLinea1"
+							quid       	"7A31EDF3CE98"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLocalLinea2"
+							quid       	"159FEFCD76DF"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLocalLinea3"
+							quid       	"220B4B05135C"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLargaDistanciaLinea1"
+							quid       	"1C01F9F92E13"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLargaDistanciaLinea2"
+							quid       	"554EC287BBBB"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLargaDistanciaLinea3"
+							quid       	"7997C3FFDE21"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarCelularDistanciaLinea1"
+							quid       	"428A2AA573E3"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarCelularDistanciaLinea2"
+							quid       	"659F6827D40C"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarCelularDistanciaLinea3"
+							quid       	"7B7B2EB4857E"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testDarTotalLlamadas"
+							quid       	"48CEF2E1050A"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testDarTotalMinutos"
+							quid       	"398B95375A0A"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testDarTotalCosto"
+							quid       	"4F0F44C2180F"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testDarCostoPromedio"
+							quid       	"623845FABF2E"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testReiniciar"
+							quid       	"139ACCAD5C64"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)))
+					    (object Class "LineaTelefonicaTest"
+						quid       	"4B22EED26F78"
+						stereotype 	"TestCase"
+						operations 	(list Operations
+						    (object Operation "void setupEscenario1"
+							quid       	"759A56ED4270"
+							concurrency 	"Sequential"
+							opExportControl 	"Private"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaCelular"
+							quid       	"192FB488047D"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLocal"
+							quid       	"1187B4F03938"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testAgregarLlamadaLargaDistancia"
+							quid       	"AFC9D9BFB7B3"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0)
+						    (object Operation "void testReiniciar"
+							quid       	"A934EDFB7266"
+							concurrency 	"Sequential"
+							opExportControl 	"Public"
+							uid        	0))))
+					logical_presentations 	(list unit_reference_list)))
+				logical_presentations 	(list unit_reference_list)))
+			logical_presentations 	(list unit_reference_list)))
+		logical_presentations 	(list unit_reference_list)))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "ModeloConceptual"
+		quid       	"56B2AF3449CE"
+		title      	"ModeloConceptual"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object NoteView @1
+			location   	(720, 96)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(257, 42)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	930
+			    label      	
+|Empresa
+|Clase que representa la empresa
+			    )
+			fill_color 	13434879
+			width      	950
+			height     	120)
+		    (object NoteView @2
+			location   	(2704, 144)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(2401, 57)
+			    fill_color 	13434879
+			    nlines     	3
+			    max_width  	571
+			    label      	
+|LineaTelefonica
+|Clase que representa una línea telefónica
+			    )
+			fill_color 	13434879
+			width      	631
+			height     	187)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa" @3
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(704, 768)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(97, 239)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	1214
+			    justify    	0
+			    label      	"Empresa")
+			icon_style 	"Icon"
+			line_color 	-16777216
+			fill_color 	13434879
+			quidu      	"3BC21332BFCA"
+			compartment 	(object Compartment
+			    Parent_View 	@3
+			    location   	(97, 344)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	19
+			    max_width  	1033)
+			width      	1232
+			height     	1082
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica" @4
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2736, 784)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(2199, 430)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	1074
+			    justify    	0
+			    label      	"LineaTelefonica")
+			icon_style 	"Icon"
+			line_color 	-16777216
+			fill_color 	13434879
+			quidu      	"5A118AF06CD7"
+			compartment 	(object Compartment
+			    Parent_View 	@4
+			    location   	(2199, 535)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	12
+			    max_width  	921)
+			width      	1092
+			height     	732
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @5
+			location   	(1755, 784)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA84340290"
+			roleview_list 	(list RoleViews
+			    (object RoleView "linea2" @6
+				Parent_View 	@5
+				location   	(827, 16)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @7
+				    Parent_View 	@6
+				    location   	(2103, 743)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	136
+				    justify    	0
+				    label      	"linea2"
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843501B5"
+				client     	@5
+				supplier   	@4
+				line_style 	3
+				origin_attachment 	(1755, 784)
+				terminal_attachment 	(2190, 784)
+				label      	(object SegLabel @8
+				    Parent_View 	@6
+				    location   	(2145, 838)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))
+			    (object RoleView "$UNNAMED$1" @9
+				Parent_View 	@5
+				location   	(827, 16)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843501C5"
+				client     	@5
+				supplier   	@3
+				line_style 	3
+				origin_attachment 	(1755, 784)
+				terminal_attachment 	(1320, 784))))
+		    (object AssociationViewNew "$UNNAMED$2" @10
+			location   	(1755, 1041)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA843B0167"
+			roleview_list 	(list RoleViews
+			    (object RoleView "linea3" @11
+				Parent_View 	@10
+				location   	(827, 273)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @12
+				    Parent_View 	@11
+				    location   	(2103, 1000)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	136
+				    justify    	0
+				    label      	"linea3"
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843C0000"
+				client     	@10
+				supplier   	@4
+				line_style 	3
+				origin_attachment 	(1755, 1041)
+				terminal_attachment 	(2190, 1041)
+				label      	(object SegLabel @13
+				    Parent_View 	@11
+				    location   	(2145, 1095)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))
+			    (object RoleView "$UNNAMED$3" @14
+				Parent_View 	@10
+				location   	(827, 273)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843C0002"
+				client     	@10
+				supplier   	@3
+				line_style 	3
+				origin_attachment 	(1755, 1041)
+				terminal_attachment 	(1320, 1041))))
+		    (object AssociationViewNew "$UNNAMED$4" @15
+			location   	(1755, 563)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA843D02CE"
+			roleview_list 	(list RoleViews
+			    (object RoleView "linea1" @16
+				Parent_View 	@15
+				location   	(827, -205)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @17
+				    Parent_View 	@16
+				    location   	(2103, 522)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	136
+				    justify    	0
+				    label      	"linea1"
+				    pctDist    	0.800000
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843E0138"
+				client     	@15
+				supplier   	@4
+				line_style 	3
+				origin_attachment 	(1755, 563)
+				terminal_attachment 	(2190, 563)
+				label      	(object SegLabel @18
+				    Parent_View 	@16
+				    location   	(2145, 617)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))
+			    (object RoleView "$UNNAMED$5" @19
+				Parent_View 	@15
+				location   	(827, -205)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA843E013A"
+				client     	@15
+				supplier   	@3
+				line_style 	3
+				origin_attachment 	(1755, 563)
+				terminal_attachment 	(1320, 563))))))
+	    (object ClassDiagram "Interfaz"
+		quid       	"7722D8CC1B42"
+		title      	"Interfaz"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	872
+		origin_y   	341
+		items      	(list diagram_item_list
+		    (object NoteView @20
+			location   	(2048, 1536)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@20
+			    location   	(1623, 1458)
+			    fill_color 	13434879
+			    nlines     	3
+			    max_width  	815
+			    label      	
+|InterfazLineasTelefonicas
+|Esta es la ventana principal de la aplicación.
+			    )
+			fill_color 	14540253
+			width      	875
+			height     	168)
+		    (object NoteView @21
+			location   	(592, 688)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@21
+			    location   	(264, 626)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	621
+			    label      	
+|PanelExtension
+|Panel de manejo de extensiones
+			    )
+			fill_color 	14540253
+			width      	681
+			height     	137)
+		    (object NoteView @22
+			location   	(2640, 128)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@22
+			    location   	(2299, 56)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	646
+			    label      	
+|PanelImagen
+|Panel con la imagen de la empresa
+			    )
+			fill_color 	14540253
+			width      	706
+			height     	156)
+		    (object NoteView @23
+			location   	(4112, 1168)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@23
+			    location   	(3759, 1087)
+			    fill_color 	13434879
+			    nlines     	3
+			    max_width  	671
+			    label      	
+|PanelLineaTelefonica
+|Panel con la información de una línea telefónica
+			    )
+			fill_color 	14540253
+			width      	731
+			height     	175)
+		    (object NoteView @24
+			location   	(4080, 96)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@24
+			    location   	(3767, 42)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	630
+			    label      	
+|PanelTotales
+|Panel con los totales
+			    )
+			fill_color 	14540253
+			width      	650
+			height     	120)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelExtension" @25
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(640, 1056)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@25
+			    location   	(74, 949)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	1132
+			    justify    	0
+			    label      	"PanelExtension")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@25
+			    location   	(74, 899)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	1132
+			    justify    	0
+			    label      	"<<JPanel - Listener>>")
+			icon_style 	"Icon"
+			fill_color 	14540253
+			quidu      	"6E01996C9C7E"
+			compartment 	(object Compartment
+			    Parent_View 	@25
+			    location   	(74, 1054)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	3
+			    max_width  	1092)
+			width      	1150
+			height     	338
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelImagen" @26
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2624, 448)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@26
+			    location   	(2392, 360)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	464
+			    justify    	0
+			    label      	"PanelImagen")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@26
+			    location   	(2392, 310)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	464
+			    justify    	0
+			    label      	"<<JPanel>>")
+			icon_style 	"Icon"
+			fill_color 	14540253
+			quidu      	"48D401B33152"
+			compartment 	(object Compartment
+			    Parent_View 	@26
+			    location   	(2392, 465)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	2
+			    max_width  	375)
+			width      	482
+			height     	300
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelTotales" @27
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(4240, 512)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@27
+			    location   	(3755, 356)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	970
+			    justify    	0
+			    label      	"PanelTotales")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@27
+			    location   	(3755, 306)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	970
+			    justify    	0
+			    label      	"<<JPanel>>")
+			icon_style 	"Icon"
+			fill_color 	14540253
+			quidu      	"76437152D1D7"
+			compartment 	(object Compartment
+			    Parent_View 	@27
+			    location   	(3755, 461)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	5
+			    max_width  	813)
+			width      	988
+			height     	437
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::PanelLineaTelefonica" @28
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(4608, 1568)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@28
+			    location   	(3752, 1379)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	1712
+			    justify    	0
+			    label      	"PanelLineaTelefonica")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@28
+			    location   	(3752, 1335)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	1712
+			    justify    	0
+			    label      	"<<JPanel - Listener>>")
+			icon_style 	"Icon"
+			fill_color 	14540253
+			quidu      	"7ABAF63DD713"
+			compartment 	(object Compartment
+			    Parent_View 	@28
+			    location   	(3752, 1468)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	6
+			    max_width  	1654)
+			width      	1730
+			height     	488
+			annotation 	8
+			autoResize 	TRUE)
+		    (object NoteView @29
+			location   	(2592, 2304)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@29
+			    location   	(2273, 2245)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	603
+			    label      	
+|Empresa
+|Clase que representa la empresa
+			    )
+			fill_color 	13434879
+			width      	663
+			height     	131)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::interfaz::InterfazLineasTelefonicas" @30
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2624, 1040)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@30
+			    location   	(2189, 862)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	870
+			    justify    	0
+			    label      	"InterfazLineasTelefonicas")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@30
+			    location   	(2189, 812)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	870
+			    justify    	0
+			    label      	"<<JFrame>>")
+			icon_style 	"Icon"
+			fill_color 	14540253
+			quidu      	"5FD01CF8FA3C"
+			compartment 	(object Compartment
+			    Parent_View 	@30
+			    location   	(2189, 967)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	6
+			    max_width  	850)
+			width      	888
+			height     	481
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$13" @31
+			location   	(1697, 1056)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA872D02DE"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelExtension" @32
+				Parent_View 	@31
+				location   	(-927, 16)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @33
+				    Parent_View 	@32
+				    location   	(1373, 1016)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	302
+				    justify    	0
+				    label      	"panelExtension"
+				    pctDist    	0.671499
+				    height     	41
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA872E01A5"
+				client     	@31
+				supplier   	@25
+				line_style 	3
+				origin_attachment 	(1697, 1056)
+				terminal_attachment 	(1215, 1056)
+				label      	(object SegLabel @34
+				    Parent_View 	@32
+				    location   	(1263, 1110)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "principal" @35
+				Parent_View 	@31
+				location   	(-927, 16)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @36
+				    Parent_View 	@35
+				    location   	(2084, 1016)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	186
+				    justify    	0
+				    label      	"principal"
+				    pctDist    	0.803607
+				    height     	41
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA872E01A7"
+				client     	@31
+				supplier   	@30
+				line_style 	3
+				origin_attachment 	(1697, 1056)
+				terminal_attachment 	(2180, 1056)
+				label      	(object SegLabel @37
+				    Parent_View 	@35
+				    location   	(2131, 1110)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))))
+		    (object AssociationViewNew "$UNNAMED$14" @38
+			location   	(2624, 698)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA8766036B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelImagen" @39
+				Parent_View 	@38
+				location   	(0, -342)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @40
+				    Parent_View 	@39
+				    location   	(2501, 632)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	252
+				    justify    	0
+				    label      	"panelImagen"
+				    pctDist    	0.660000
+				    height     	123
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA876701E4"
+				client     	@38
+				supplier   	@26
+				line_style 	0
+				label      	(object SegLabel @41
+				    Parent_View 	@39
+				    location   	(2664, 641)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.570000
+				    height     	40
+				    orientation 	1))
+			    (object RoleView "$UNNAMED$15" @42
+				Parent_View 	@38
+				location   	(0, -342)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA876701E6"
+				client     	@38
+				supplier   	@30
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$16" @43
+			location   	(3196, 472)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA87AE008C"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelTotales" @44
+				Parent_View 	@43
+				location   	(572, -568)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @45
+				    Parent_View 	@44
+				    location   	(3599, 432)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	252
+				    justify    	0
+				    label      	"panelTotales"
+				    pctDist    	0.732314
+				    height     	41
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA87AE02DE"
+				client     	@43
+				supplier   	@27
+				line_style 	3
+				origin_attachment 	(3196, 472)
+				terminal_attachment 	(3746, 472)
+				label      	(object SegLabel @46
+				    Parent_View 	@44
+				    location   	(3690, 526)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))
+			    (object RoleView "$UNNAMED$17" @47
+				Parent_View 	@43
+				location   	(572, -568)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA87AE02E0"
+				client     	@43
+				supplier   	@30
+				vertices   	(list Points
+				    (3196, 472)
+				    (2974, 472)
+				    (2974, 800))
+				line_style 	3
+				origin_attachment 	(3196, 472)
+				terminal_attachment 	(2974, 800))))
+		    (object AssociationViewNew "$UNNAMED$18" @48
+			location   	(3211, 1479)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA881003C8"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelLinea1" @49
+				Parent_View 	@48
+				location   	(587, 439)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @50
+				    Parent_View 	@49
+				    location   	(3411, 1437)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	244
+				    justify    	0
+				    label      	"panelLinea1"
+				    pctDist    	0.375940
+				    height     	42
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88110290"
+				client     	@48
+				supplier   	@28
+				line_style 	3
+				origin_attachment 	(3211, 1479)
+				terminal_attachment 	(3743, 1479)
+				label      	(object SegLabel @51
+				    Parent_View 	@49
+				    location   	(3706, 1451)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.930451
+				    height     	28
+				    orientation 	0))
+			    (object RoleView "principal" @52
+				Parent_View 	@48
+				location   	(587, 439)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @53
+				    Parent_View 	@52
+				    location   	(2965, 1448)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	186
+				    justify    	0
+				    label      	"principal"
+				    pctDist    	0.462406
+				    height     	31
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88110292"
+				client     	@48
+				supplier   	@30
+				vertices   	(list Points
+				    (3211, 1479)
+				    (2878, 1479)
+				    (2878, 1280))
+				line_style 	3
+				origin_attachment 	(3211, 1479)
+				terminal_attachment 	(2878, 1280)
+				label      	(object SegLabel @54
+				    Parent_View 	@52
+				    location   	(2906, 1324)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.917293
+				    height     	28
+				    orientation 	1))))
+		    (object AssociationViewNew "$UNNAMED$19" @55
+			location   	(3102, 1578)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA8813007D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelLinea2" @56
+				Parent_View 	@55
+				location   	(478, 538)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @57
+				    Parent_View 	@56
+				    location   	(3408, 1537)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	244
+				    justify    	0
+				    label      	"panelLinea2"
+				    pctDist    	0.477379
+				    height     	41
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA881302BF"
+				client     	@55
+				supplier   	@28
+				line_style 	3
+				origin_attachment 	(3102, 1578)
+				terminal_attachment 	(3743, 1578)
+				label      	(object SegLabel @58
+				    Parent_View 	@56
+				    location   	(3711, 1551)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.950078
+				    height     	27
+				    orientation 	0))
+			    (object RoleView "principal" @59
+				Parent_View 	@55
+				location   	(478, 538)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @60
+				    Parent_View 	@59
+				    location   	(2865, 1537)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	186
+				    justify    	0
+				    label      	"principal"
+				    pctDist    	0.369735
+				    height     	41
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA881302C1"
+				client     	@55
+				supplier   	@30
+				vertices   	(list Points
+				    (3102, 1578)
+				    (2759, 1578)
+				    (2759, 1280))
+				line_style 	3
+				origin_attachment 	(3102, 1578)
+				terminal_attachment 	(2759, 1280)
+				label      	(object SegLabel @61
+				    Parent_View 	@59
+				    location   	(2783, 1328)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.925117
+				    height     	24
+				    orientation 	1))))
+		    (object AssociationViewNew "$UNNAMED$20" @62
+			location   	(2993, 1694)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA8815004E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "panelLinea3" @63
+				Parent_View 	@62
+				location   	(369, 654)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @64
+				    Parent_View 	@63
+				    location   	(3404, 1654)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	244
+				    justify    	0
+				    label      	"panelLinea3"
+				    pctDist    	0.548000
+				    height     	40
+				    orientation 	0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88150203"
+				client     	@62
+				supplier   	@28
+				line_style 	3
+				origin_attachment 	(2993, 1694)
+				terminal_attachment 	(3743, 1694)
+				label      	(object SegLabel @65
+				    Parent_View 	@63
+				    location   	(3707, 1655)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.952830
+				    height     	40
+				    orientation 	0))
+			    (object RoleView "principal" @66
+				Parent_View 	@62
+				location   	(369, 654)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @67
+				    Parent_View 	@66
+				    location   	(2768, 1654)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	186
+				    justify    	0
+				    label      	"principal"
+				    pctDist    	0.300945
+				    height     	41
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88150205"
+				client     	@62
+				supplier   	@30
+				vertices   	(list Points
+				    (2993, 1694)
+				    (2656, 1694)
+				    (2656, 1280))
+				line_style 	3
+				origin_attachment 	(2993, 1694)
+				terminal_attachment 	(2656, 1280)
+				label      	(object SegLabel @68
+				    Parent_View 	@66
+				    location   	(2680, 1329)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.934754
+				    height     	24
+				    orientation 	1))))
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa" @69
+			ShowCompartmentStereotypes 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2576, 2096)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@69
+			    location   	(2452, 2021)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	248
+			    justify    	0
+			    label      	"Empresa")
+			icon_style 	"Icon"
+			line_color 	-16777216
+			fill_color 	13434879
+			quidu      	"3BC21332BFCA"
+			width      	266
+			height     	174
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$21" @70
+			location   	(2576, 1644)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA88B3009C"
+			roleview_list 	(list RoleViews
+			    (object RoleView "empresa" @71
+				Parent_View 	@70
+				location   	(-48, 604)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @72
+				    Parent_View 	@71
+				    location   	(2484, 1983)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	189
+				    justify    	0
+				    label      	"empresa"
+				    pctDist    	0.928767
+				    height     	92
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88B302EE"
+				client     	@70
+				supplier   	@69
+				line_style 	3
+				origin_attachment 	(2576, 1644)
+				terminal_attachment 	(2576, 2009)
+				label      	(object SegLabel @73
+				    Parent_View 	@71
+				    location   	(2630, 1972)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$22" @74
+				Parent_View 	@70
+				location   	(-48, 604)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA88B302FD"
+				client     	@70
+				supplier   	@30
+				line_style 	3
+				origin_attachment 	(2576, 1644)
+				terminal_attachment 	(2576, 1280))))))
+	    (object ClassDiagram "Pruebas"
+		quid       	"2C5A7776BDC8"
+		title      	"Pruebas"
+		zoom       	95
+		max_height 	28350
+		max_width  	21600
+		origin_x   	506
+		origin_y   	572
+		items      	(list diagram_item_list
+		    (object NoteView @75
+			location   	(752, 192)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@75
+			    location   	(221, 93)
+			    fill_color 	13434879
+			    nlines     	4
+			    max_width  	1026
+			    label      	
+|EmpresaTest
+|Esta es la clase usada para verificar que los métodos de la clase Empresa estén correctamente implementados
+			    )
+			fill_color 	16768185
+			width      	1086
+			height     	211)
+		    (object NoteView @76
+			location   	(2256, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@76
+			    location   	(1798, 161)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	881
+			    label      	
+|LineaTelefonicaTest
+|Pruebas de la clase LineaTelefonica
+			    )
+			fill_color 	16768185
+			width      	941
+			height     	138)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::test::EmpresaTest" @77
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(752, 960)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@77
+			    location   	(205, 486)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	1094
+			    justify    	0
+			    label      	"EmpresaTest")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@77
+			    location   	(205, 437)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	1094
+			    justify    	0
+			    label      	"<<TestCase>>")
+			icon_style 	"Icon"
+			fill_color 	16768185
+			quidu      	"4F429CEF2663"
+			compartment 	(object Compartment
+			    Parent_View 	@77
+			    location   	(205, 592)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	18
+			    max_width  	932)
+			width      	1112
+			height     	1070
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::mundo::Empresa" @78
+			ShowCompartmentStereotypes 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(768, 1872)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@78
+			    location   	(644, 1798)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	248
+			    justify    	0
+			    label      	"Empresa")
+			icon_style 	"Icon"
+			fill_color 	13434879
+			quidu      	"3BC21332BFCA"
+			width      	266
+			height     	172
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$6" @79
+			location   	(768, 1640)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA853902FD"
+			roleview_list 	(list RoleViews
+			    (object RoleView "empresa" @80
+				Parent_View 	@79
+				location   	(16, 680)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @81
+				    Parent_View 	@80
+				    location   	(648, 1756)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	183
+				    justify    	0
+				    label      	"empresa"
+				    pctDist    	0.801930
+				    height     	121
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA853A0271"
+				client     	@79
+				supplier   	@78
+				line_style 	3
+				origin_attachment 	(768, 1640)
+				terminal_attachment 	(768, 1786)
+				label      	(object SegLabel @82
+				    Parent_View 	@80
+				    location   	(822, 1760)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.821782
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$7" @83
+				Parent_View 	@79
+				location   	(16, 680)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA853A0273"
+				client     	@79
+				supplier   	@77
+				line_style 	3
+				origin_attachment 	(768, 1640)
+				terminal_attachment 	(768, 1495))))
+		    (object NoteView @84
+			location   	(784, 2048)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@84
+			    location   	(321, 1994)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	930
+			    label      	
+|Empresa
+|Clase que representa la empresa
+			    )
+			fill_color 	13434879
+			width      	950
+			height     	120)
+		    (object NoteView @85
+			location   	(2272, 2048)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@85
+			    location   	(1969, 1961)
+			    fill_color 	13434879
+			    nlines     	3
+			    max_width  	571
+			    label      	
+|LineaTelefonica
+|Clase que representa una línea telefónica
+			    )
+			fill_color 	13434879
+			width      	631
+			height     	187)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::test::LineaTelefonicaTest" @86
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2256, 912)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@86
+			    location   	(1782, 732)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	948
+			    justify    	0
+			    label      	"LineaTelefonicaTest")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@86
+			    location   	(1782, 683)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	948
+			    justify    	0
+			    label      	"<<TestCase>>")
+			icon_style 	"Icon"
+			fill_color 	16768185
+			quidu      	"4B22EED26F78"
+			compartment 	(object Compartment
+			    Parent_View 	@86
+			    location   	(1782, 838)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	16777215
+			    anchor     	2
+			    nlines     	6
+			    max_width  	806)
+			width      	966
+			height     	482
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::uniandes::cupi2::lineasTelefonicas::mundo::LineaTelefonica" @87
+			ShowCompartmentStereotypes 	TRUE
+			ShowOperationSignature 	TRUE
+			location   	(2256, 1824)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@87
+			    location   	(2074, 1750)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	364
+			    justify    	0
+			    label      	"LineaTelefonica")
+			icon_style 	"Icon"
+			line_color 	-16777216
+			fill_color 	13434879
+			quidu      	"5A118AF06CD7"
+			width      	382
+			height     	172
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$8" @88
+			location   	(2256, 1445)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			quidu      	"43DA85B400EA"
+			roleview_list 	(list RoleViews
+			    (object RoleView "linea" @89
+				Parent_View 	@88
+				location   	(0, 773)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @90
+				    Parent_View 	@89
+				    location   	(2183, 1677)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	125
+				    justify    	0
+				    label      	"linea"
+				    pctDist    	0.795181
+				    height     	74
+				    orientation 	1)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA85B5007D"
+				client     	@88
+				supplier   	@87
+				line_style 	0
+				label      	(object SegLabel @91
+				    Parent_View 	@89
+				    location   	(2311, 1680)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.804217
+				    height     	55
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$9" @92
+				Parent_View 	@88
+				location   	(0, 773)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"43DA85B5007F"
+				client     	@88
+				supplier   	@86
+				line_style 	0)))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"3AF14106033D"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"3AF141080064"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list)))
+	category   	"Logical View"
+	quidu      	"43DA826A036C")
+    process_structure 	(object Processes
+	quid       	"3AF14106033E"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"3AF141060347"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	attributes 	(list Attribute_Set
+	    (object Attribute
+		tool       	"DDL"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"DDL"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"DDL"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DataBase"
+			value      	("DataBaseSet" 800))
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DataBaseSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"DDL"
+				name       	"ANSI"
+				value      	800)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Oracle"
+				value      	801)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"SQLServer"
+				value      	802)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Sybase"
+				value      	803)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Watcom"
+				value      	804)))
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKeyColumnName"
+			value      	"Id")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKeyColumnType"
+			value      	"NUMBER(5)")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"ViewName"
+			value      	"V_")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"TableName"
+			value      	"T_")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"InheritSuffix"
+			value      	"_V")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DropClause"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"BaseViews"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DDLScriptFilename"
+			value      	"DDL1.SQL")))
+	    (object Attribute
+		tool       	"DDL"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"DDL"
+			name       	"ColumnType"
+			value      	"VARCHAR")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"NullsOK"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKey"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"Unique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"CompositeUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"CheckConstraint"
+			value      	"")))
+	    (object Attribute
+		tool       	"DDL"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"IDL"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"StopOnError"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GeneratePreserveRegions"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"ImplementationType"
+			value      	"")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"ConstValue"
+			value      	"")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateDefaultSpecifier"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"DefaultSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IDLElement"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IDLSpecificationType"
+			value      	("IDLSpecSet" 22))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IDLSpecSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Interface"
+				value      	22)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Typedef"
+				value      	54)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Enumeration"
+				value      	8)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Const"
+				value      	71)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Exception"
+				value      	61)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Struct"
+				value      	51)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Union"
+				value      	81)))))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"FileName"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateIDLModule"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"InclusionProtectionSymbol"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IncludeBySimpleName"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"FileName"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IncludeBySimpleName"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"OperationIsOneWay"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"Context"
+			value      	"")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"Raises"
+			value      	"")))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"CaseSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IsConst"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"ConstValue"
+			value      	"")))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"NameIfUnlabeled"
+			value      	"the_$supplier")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateForwardReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"BoundedHasRelType"
+			value      	("HasRelTypeSet" 47))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"HasRelTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Array"
+				value      	24)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Sequence"
+				value      	47)))))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"NameIfUnlabeled"
+			value      	"the_$supplier")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateForwardReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"IDL"
+			name       	"BoundedRoleType"
+			value      	("AssocTypeSet" 47))
+		    (object Attribute
+			tool       	"IDL"
+			name       	"AssocTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Array"
+				value      	24)
+			    (object Attribute
+				tool       	"IDL"
+				name       	"Sequence"
+				value      	47)))))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Uses"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"GenerateForwardReference"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"IDL"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"IDL"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Java"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"Java"
+			name       	"UsePrefixes"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"InstanceVariablePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ClassVariablePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultAttributeDataType"
+			value      	"int")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultOperationReturnType"
+			value      	"void")
+		    (object Attribute
+			tool       	"Java"
+			name       	"FundamentalType"
+			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap")
+		    (object Attribute
+			tool       	"Java"
+			name       	"RootDir"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"AutoSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"NotShowRoseIDDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ShowCodegenDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateRoseID"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultJ2EEJavadoc"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultReturnLine"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultAuthor"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultSince"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"UserDefineJavaDocTags"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocNumAsterisks"
+			value      	0)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MaxNumChars"
+			value      	80)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Editor"
+			value      	("EditorType" 100))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VM"
+			value      	("VMType" 200))
+		    (object Attribute
+			tool       	"Java"
+			name       	"ClassPath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReferenceClasspath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EditorType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"BuiltIn"
+				value      	100)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VMType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Sun"
+				value      	200)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VAJavaWorkingFolder"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"NoClassCustomDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GlobalImports"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"OpenBraceClassStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"OpenBraceMethodStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"UseSpaces"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SpacingItems"
+			value      	3)
+		    (object Attribute
+			tool       	"Java"
+			name       	"RoseDefaultCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"AsteriskCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavaCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocAuthor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocSince"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocVersion"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"RemotePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"RemoteSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"HomePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"HomeSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalHomePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalHomeSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"PrimaryKeyPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"PrimaryKeySuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBDTDLocation"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletDTDLocation"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultEJBVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultServletVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SourceControl"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCSelected"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCProjectSourceRoot"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCProjectName"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCComment"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultConstructor"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ConstructorIs"
+			value      	("Ctor_Set" 62))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Ctor_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"public"
+				value      	62)
+			    (object Attribute
+				tool       	"Java"
+				name       	"protected"
+				value      	63)
+			    (object Attribute
+				tool       	"Java"
+				name       	"private"
+				value      	64)
+			    (object Attribute
+				tool       	"Java"
+				name       	"package"
+				value      	65)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFinalizer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateStaticInitializer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateInstanceInitializer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Static"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"DisableAutoSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Strictfp"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletName"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContextRef"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"IsSingleThread"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIsSecure"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcher"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcherPath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherInclude"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherForward"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletgetInfo"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletXMLFilePath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttribute"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttributesNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestAttributes"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestParameters"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeader"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeaderNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForHeaders"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIntHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletDateHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletCookie"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForCookie"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContentType"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateHTML"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Generate_XML_DD"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCmpField"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBEnvironmentProperties"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCnxFactory"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReferences"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBNameInJAR"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType"
+			value      	("EJBSessionType_Set" 200))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	200)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateless"
+				value      	201)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateful"
+				value      	202)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType"
+			value      	("EJBTransactionType_Set" 211))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	211)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	212)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType"
+			value      	("EJBPersistenceType_Set" 220))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	220)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	221)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	222)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReentrant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion"
+			value      	("EJBVersion_Set" 230))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"2.0"
+				value      	230)
+			    (object Attribute
+				tool       	"Java"
+				name       	"1.x"
+				value      	231)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBXMLFilePath"
+			value      	"")))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"CmIdentification"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"AdditionalImports"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"CmIdentification"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"AdditionalImports"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Abstract"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Static"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Native"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Synchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedReturn"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReplaceExistingCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Strictfp"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"PropertyType"
+			value      	("BeanProperty_Set" 71))
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanProperty_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Not A Property"
+				value      	71)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Simple"
+				value      	72)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bound"
+				value      	73)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Constrained"
+				value      	74)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"IndividualChangeMgt"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write"
+			value      	("Read/Write_Set" 81))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read & Write"
+				value      	81)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read Only"
+				value      	82)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Write Only"
+				value      	83)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedTypes"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ContainerClass"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"PropertyType"
+			value      	("BeanProperty_Set" 71))
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanProperty_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Not A Property"
+				value      	71)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Simple"
+				value      	72)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bound"
+				value      	73)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Constrained"
+				value      	74)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"IndividualChangeMgt"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write"
+			value      	("Read/Write_Set" 81))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read & Write"
+				value      	81)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read Only"
+				value      	82)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Write Only"
+				value      	83)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedTypes"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"IsNavigable"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"SCC"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"project"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ViewCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DomainCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SPPackageCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TriggerCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IndexCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ConstraintCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"StoreProcedureCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PrimaryKeyCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ForeignKeyCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"JoinCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"cONTAINERCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TablePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ViewPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DomainPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TriggerPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IndexPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ConstraintPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"StoreProcedurePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PrimaryKeyPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ForeignKeyPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpacePrefix"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDatabase"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TargetDatabase"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Location"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsTableSpace"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDeault"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"BufferPool"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ExtentSize"
+			value      	1)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PrefetchSize"
+			value      	1)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PageSize"
+			value      	4)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ManagedBy"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ContainerList"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Category"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmSchema"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmDomainPackage"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsSchema"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDomainPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsRootSchema"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsRootDomainPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsSchemaPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DatabaseID"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DBMS"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsTable"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsView"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDomain"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsSPPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Synonymns"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceID"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceId"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"CorrelationName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SelectClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsUpdateable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"CheckOption"
+			value      	"None")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsSnapShot"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDistinct"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PersistToServer"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackage"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Ordinal"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsIdentity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"NullsAllowed"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Length"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Scale"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ColumnType"
+			value      	"Native")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ForBitData"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValueType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceId"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"OID"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsRelationship"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceId"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"SourceType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"RIMethod"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ParentUpdateRule"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ParentUpdateRuleName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ParentDeleteRule"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ParentDeleteRuleName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ChildInsertRestrict"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ChildInsertRestrictName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ChildMultiplicity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ChildMultiplicityName"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ConstraintName"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsConstraint"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ConstraintType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsIndex"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsTrigger"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsStoredProcedure"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsCluster"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpace"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"FillFactor"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"KeyList"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"CheckPredicate"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DeferalMode"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"InitialCheckTime"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TriggerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsInsertEvent"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsUpdateEvent"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDeleteEvent"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"RefOldTable"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"RefNewTable"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"RefOldRow"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"RefNewRow"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsRow"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"WhenClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Language"
+			value      	"SQL")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ProcType"
+			value      	"Procedure")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDeterministic"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ParameterStyle"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ReturnedNull"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ExternalName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Scale"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ForBitData"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValueType"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"default__Parameter"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"dmItem"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DMName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsInParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsOutParameter"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Ordinal"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"Scale"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ForBitData"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValueType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"DefaultValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"OperationID"
+			value      	"")))
+	    (object Attribute
+		tool       	"Data Modeler"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Data Modeler Communicator"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Deploy"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"framework"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Java"
+		name       	"Default_Servlet__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletName"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContextRef"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"IsSingleThread"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIsSecure"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcher"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcherPath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherInclude"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherForward"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletgetInfo"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletXMLFilePath"
+			value      	"")))
+	    (object Attribute
+		tool       	"Java"
+		name       	"Http_Servlet__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttribute"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttributesNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestAttributes"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestParameters"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeader"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeaderNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForHeaders"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIntHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletDateHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletCookie"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForCookie"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContentType"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateHTML"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"Default_EJB__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Generate_XML_DD"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCmpField"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBEnvironmentProperties"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCnxFactory"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReferences"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBNameInJAR"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType"
+			value      	("EJBSessionType_Set" 200))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	200)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateless"
+				value      	201)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateful"
+				value      	202)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType"
+			value      	("EJBTransactionType_Set" 211))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	211)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	212)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType"
+			value      	("EJBPersistenceType_Set" 220))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	220)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	221)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	222)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReentrant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion"
+			value      	("EJBVersion_Set" 230))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"2.0"
+				value      	230)
+			    (object Attribute
+				tool       	"Java"
+				name       	"1.x"
+				value      	231)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBXMLFilePath"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"propertyId"
+		value      	"360000002")
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"DDLScriptFilename"
+			value      	"DDL1.SQL")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"DropClause"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"PrimaryKeyColumnName"
+			value      	"_ID")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"PrimaryKeyColumnType"
+			value      	"NUMBER(5,0)")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"SchemaNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"SchemaNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TableNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TypeNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TypeNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ViewNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ViewNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"VarrayNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"VarrayNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NestedTableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NestedTableNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ObjectTableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ObjectTableNameSuffix"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsSchema"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OID"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"WhereClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CheckConstraint"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypeLength"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypePrecision"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypeScale"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionOfREFS"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"MethodKind"
+			value      	("MethodKindSet" 1903))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OverloadID"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsReadNoDataState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsReadNoProcessState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsWriteNoDataState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsWriteNoProcessState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsSelfish"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerType"
+			value      	("TriggerTypeSet" 1801))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerEvent"
+			value      	("TriggerEventSet" 1601))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerText"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerReferencingNames"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerForEach"
+			value      	("TriggerForEachSet" 1701))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerWhenClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"MethodKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"MapMethod"
+				value      	1901)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"OrderMethod"
+				value      	1902)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Function"
+				value      	1903)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Procedure"
+				value      	1904)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Operator"
+				value      	1905)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Constructor"
+				value      	1906)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Destructor"
+				value      	1907)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Trigger"
+				value      	1908)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Calculated"
+				value      	1909)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"AFTER"
+				value      	1801)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"BEFORE"
+				value      	1802)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSTEAD OF"
+				value      	1803)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerForEachSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"ROW"
+				value      	1701)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"STATEMENT"
+				value      	1702)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerEventSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT"
+				value      	1601)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"UPDATE"
+				value      	1602)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"DELETE"
+				value      	1603)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR UPDATE"
+				value      	1604)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR DELETE"
+				value      	1605)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"UPDATE OR DELETE"
+				value      	1606)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR UPDATE OR DELETE"
+				value      	1607)))))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NullsAllowed"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Precision"
+			value      	"2")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Scale"
+			value      	"6")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsIndex"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsPrimaryKey"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CompositeUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CheckConstraint"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"ComponentTest"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Model Integrator"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Web Publisher"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"TopLink"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Version Control"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Web Modeler"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Editor"
+			value      	("EditorType" 100))
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"StopOnError"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"EditorType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"XML_DTD"
+				name       	"BuiltIn"
+				value      	100)
+			    (object Attribute
+				tool       	"XML_DTD"
+				name       	"WindowsShell"
+				value      	101)))))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Entity_SystemID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Entity_PublicID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"NotationValue"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"InternalValue"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ParameterEntity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ExternalEntity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Notation_SystemID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Notation_PublicID"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"DefaultDeclType"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Assign All"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ComponentPath"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"HiddenTool"
+		value      	FALSE))
+	quid       	"3AF14106033F"))
